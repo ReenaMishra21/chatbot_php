@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginners:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+.chatbox{
+    width: 370px;
+    background: #fff;
+    border-radius: 69px 5px 5px 5px;
+    border: 1px solid lightgrey;
+    box-shadow: 10px 10px 10px rgb(28, 88, 84);
+    /* border-top: 0px; */
+}
+ .title{
+    background: #ba4179;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding:20px;
+    text-align: center;
+    border-bottom: 1px solid #a43737;
+    box-shadow: 0 5px 10px rgb(28, 88, 84);
+    border-radius: 68px 5px 68px 5px;
+}
+ .form{
+    padding: 20px 15px;
+    height:350px;
+    overflow: auto;
+}
+.chatbox .form .inbox{
+    display: flex;
+    
+}
+.chatbox .form .user-inbox{
+    justify-content: flex-end;
+    margin: 13px 0;
+}
+.chatbox .form .inbox .icon{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    padding-top:5px;
+    border-radius: 50%;
+    font-size: 18px;
+    background: #ff000091;
+}
+ .msg-header{
+    max-width: 58%;
+    margin-left: 10px;
+    
+}
+.form .inbox .msg-header p{
+    color: #fff;    
+    background: #ff000094;    
+    border-radius: 37px  11px 49px 11px;
+    padding: 6px 26px;
+    font-size: 16px;
+    word-break: break-word;
+}
+.form .user-inbox .msg-header p{
+    color: #333;
+    background: #ba35345c;
+    border-radius: 11px  37px 11px 49px !important;
+}
+.chatbox .typing-field{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #efefef;
+    border-top: 1px solid #d9d9d9;
+    border-radius: 0 0 5px 5px;
+}
+.typing-field .input-data{
+    height: 40px;
+    width: 350px;
+    position: relative;
+}
+.chatbox .typing-field .input-data input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0 80px 0 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    background: #fff;    
+}
+.typing-field .input-data input:focus{
+    border-color: #ba4179;
+}
+.input-data button{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    height: 30px;
+    width: 65px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+    background: #ba4179;
+    border: 1px solid #ba4179;    
+    transform: translateY(-50%);    
+}
+
+
